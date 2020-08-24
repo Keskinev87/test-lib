@@ -1,0 +1,74 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "project": "./tsconfig.eslint.json",
+        "ecmaVersion": 2019,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "@typescript-eslint",
+        "jest"
+    ],
+    "env": {
+        "node": true,
+        "es6": true,
+        "jest/globals": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/recommended-requiring-type-checking",
+        "plugin:jest/all"
+    ],
+    "ignorePatterns": [
+        "dist/"
+    ],
+    "rules": {
+        "no-async-promise-executor": 0,
+        "prefer-const": 0,
+        "no-return-await": 1,
+        "require-await": 1,
+        "@typescript-eslint/no-unsafe-return": 0,
+        "@typescript-eslint/restrict-template-expressions": 0,
+        "@typescript-eslint/explicit-module-boundary-types": 0,
+        "@typescript-eslint/no-unsafe-assignment": 0,
+        "@typescript-eslint/restrict-plus-operands": 0,
+        "@typescript-eslint/no-unsafe-call": 0,
+        "@typescript-eslint/no-unsafe-member-access": 0,
+        "@typescript-eslint/camelcase": 0,
+        "@typescript-eslint/explicit-function-return-type": 0,
+        "@typescript-eslint/interface-name-prefix": 0,
+        "@typescript-eslint/no-array-constructor": 0,
+        "@typescript-eslint/no-explicit-any": 0,
+        "@typescript-eslint/no-inferrable-types": 0,
+        "@typescript-eslint/no-misused-promises": 0,
+        "@typescript-eslint/no-unused-vars": 0,
+        "@typescript-eslint/no-var-requires": 0,
+        "@typescript-eslint/require-await": 0,
+        "@typescript-eslint/unbound-method": 0,
+        "@typescript-eslint/class-name-casing": 0,
+        "@typescript-eslint/member-delimiter-style": 0,
+        "@typescript-eslint/no-floating-promises": 1,
+        "jest/consistent-test-it": 0,
+        "jest/expect-expect": 0,
+        "jest/lowercase-name": 0,
+        "jest/no-alias-methods": 0,
+        "jest/no-commented-out-tests": 0,
+        "jest/no-expect-resolves": 0,
+        "jest/no-hooks": 0,
+        "jest/no-jasmine-globals": 0,
+        "jest/no-test-return-statement": 0,
+        "jest/no-truthy-falsy": 0,
+        "jest/no-try-expect": 0,
+        "jest/prefer-called-with": 0,
+        "jest/prefer-expect-assertions": 0,
+        "jest/prefer-strict-equal": 0,
+        "jest/prefer-spy-on": 0,
+        "jest/prefer-to-be-null": 0,
+        "jest/prefer-to-be-undefined": 0,
+        "jest/prefer-to-have-length": 0,
+        "jest/require-to-throw-message": 0,
+        "jest/valid-title": 0
+    }
+}

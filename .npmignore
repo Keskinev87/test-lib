@@ -1,0 +1,7 @@
+src
+test
+.prettierrc
+sonar-project.properties
+sonar.json
+tslint.json
+tsconfig-build.json
