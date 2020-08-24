@@ -1,10 +1,8 @@
-export declare enum Roles {
-    beableadmin = "beableadmin",
-    districtadmin = "districtadmin",
-    contentloader = "contentloader",
-    itadmin = "itadmin"
-}
-export declare class CreateGameMessage {
-    action: string;
+export interface CreateGameRequest {
     name: string;
+    startDate: Date;
+}
+export interface CreateGameMessage {
+    action: string;
+    data: CreateGameRequest;
 }

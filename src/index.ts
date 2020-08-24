@@ -1,5 +1,10 @@
-export class CreateGameMessage {
+export interface CreateGameRequest {
+  name: string,
+  startDate: Date
+}
+
+export interface CreateGameMessage {
   action: string;
-  name: string;
+  data: CreateGameRequest
 }
 
