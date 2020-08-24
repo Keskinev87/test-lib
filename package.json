@@ -6,10 +6,7 @@
   "types": "./dist/index.d.ts",
   "private": true,
   "scripts": {
-    "build": "npm run clean && npm install && npm audit fix && npm run lint && tsc -p tsconfig.build.json",
-    "lint": "eslint --ext .js,.ts .",
-    "lint:fix": "eslint --fix --ext .js,.ts .",
-    "clean": "rm -rf ./dist ./coverage ./test-report.xml",
+    "build": "npm audit fix && tsc -p tsconfig.build.json",
     "pushhook": "npm run build"
   },
   "dependencies": {
