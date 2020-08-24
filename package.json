@@ -1,6 +1,6 @@
 {
   "name": "game-message-types",
-  "version": "1.8.12",
+  "version": "1.0.1",
   "description": "Game Message Types",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
